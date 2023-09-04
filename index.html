@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/monitor-dashboard.png" type="image/png" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="navbar">
+        <div class="navbar-logo flex-row">
+          <span class="logo-icon">
+            <svg><use href="img/sprite.svg#icon-logo"></use></svg>
+          </span>
+          <p class="logo-text">Dashboard</p>
+        </div>
+        <nav class="nav-links">
+          <ul role="list">
+            <li>
+              <a href="#"
+                ><span class="icon-container">
+                  <svg class="icon">
+                    <use href="img/sprite.svg#icon-home"></use>
+                  </svg>
+                  Home
+                </span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="icon-container">
+                  <svg class="icon">
+                    <use href="img/sprite.svg#icon-card"></use>
+                  </svg>
+                  Profile
+                </span></a
+              >
+            </li>
+
+            <li>
+              <a href="#"
+                ><span class="icon-container">
+                  <svg class="icon">
+                    <use href="img/sprite.svg#icon-message"></use>
+                  </svg>
+                  Messages
+                </span></a
+              >
+            </li>
+
+            <li>
+              <a href="#"
+                ><span class="icon-container">
+                  <svg class="icon">
+                    <use href="img/sprite.svg#icon-clock"></use>
+                  </svg>
+                  History
+                </span></a
+              >
+            </li>
+
+            <li>
+              <a href="#"
+                ><span class="icon-container">
+                  <svg class="icon">
+                    <use href="img/sprite.svg#icon-notes"></use>
+                  </svg>
+                  Tasks
+                </span></a
+              >
+            </li>
+
+            <li>
+              <a href="#"
+                ><span class="icon-container">
+                  <svg class="icon">
+                    <use href="img/sprite.svg#icon-group"></use>
+                  </svg>
+                  Communities
+                </span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav-links">
+          <ul role="list">
+            <li>
+              <a href="#"
+                ><span class="icon-container">
+                  <svg class="icon">
+                    <use href="img/sprite.svg#icon-cog"></use>
+                  </svg>
+                  Settings
+                </span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="icon-container"
+                  ><svg class="icon">
+                    <use href="img/sprite.svg#icon-help"></use>
+                  </svg>
+                  Support
+                </span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><span class="icon-container"
+                  ><svg class="icon">
+                    <use href="img/sprite.svg#icon-shield"></use>
+                  </svg>
+                  Privacy
+                </span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="options">
+        <div class="search-bar">
+          <form action="#" class="flex-row">
+            <button type="submit" class="search-btn">
+              <svg class="icon">
+                <use href="img/sprite.svg#icon-magnify"></use>
+              </svg>
+            </button>
+            <input type="text" name="search-input" class="search-input" />
+          </form>
+        </div>
+        <div class="status-bar flex-row">
+          <svg class="icon">
+            <use href="img/sprite.svg#icon-bell"></use>
+          </svg>
+          <img
+            class="profile-img"
+            src="img/photo-1526440847959-4e38e7f00b04.avif"
+            alt="Profile Picture"
+          />
+
+          <p class="profile-name">Minerva Netep</p>
+        </div>
+        <div class="welcome flex-row">
+          <img
+            class="profile-img"
+            src="img/photo-1526440847959-4e38e7f00b04.avif"
+            alt="Profile Picture"
+          />
+          <div class="welcome-text">
+            <p>Hi there,</p>
+            <h2>Minerva Netep (@minerva)</h2>
+          </div>
+        </div>
+        <div class="post-options">
+          <button type="button">New</button>
+          <button type="button">Upload</button>
+          <button type="Share">Share</button>
+        </div>
+      </section>
+      <section class="main">
+        <div class="cards-container">
+          <h3>Your Projects</h3>
+          <div class="cards">
+            <div class="card">
+              <h4>Super Cool Project</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                mollitia necessitatibus, non veniam
+              </p>
+              <div class="card-icons">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-eye"></use>
+                </svg>
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-repository"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="card">
+              <h4>Less Cool Project</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                mollitia necessitatibus, non veniam
+              </p>
+              <div class="card-icons">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-eye"></use>
+                </svg>
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-repository"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="card">
+              <h4>Impossible App</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                mollitia necessitatibus, non veniam
+              </p>
+              <div class="card-icons">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-eye"></use>
+                </svg>
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-repository"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="card">
+              <h4>Easy Peasy App</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                mollitia necessitatibus, non veniam Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Eveniet obcaecati maiores.
+              </p>
+              <div class="card-icons">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-eye"></use>
+                </svg>
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-repository"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="card">
+              <h4>Add Blocker</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                mollitia necessitatibus, non veniam Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Eveniet obcaecati maiores.
+              </p>
+              <div class="card-icons">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-eye"></use>
+                </svg>
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-repository"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="card">
+              <h4>Money Maker</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                mollitia necessitatibus, non veniam
+              </p>
+              <div class="card-icons">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-star"></use>
+                </svg>
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-eye"></use>
+                </svg>
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-repository"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="anno-container">
+          <h3>Announcements</h3>
+          <div class="announcements">
+            <div class="announcement">
+              <h6>Site Maintenance</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                magni eaque voluptas reprehenderit
+              </p>
+            </div>
+            <div class="announcement">
+              <h6>Community Share Day</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                magni eaque voluptas reprehenderit
+              </p>
+            </div>
+            <div class="announcement">
+              <h6>Updated Provacy Policy</h6>
+              <p class="last">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                magni eaque voluptas reprehenderit
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="trending-container">
+          <h3>Trending</h3>
+          <div class="trends">
+            <div class="trend flex-row">
+              <img
+                class="profile-img"
+                src="img/corgi.jpg"
+                alt="Profile Picture"
+              />
+              <div>
+                <p class="name">@Tegan</p>
+                <p class="project">World Peace Builder</p>
+              </div>
+            </div>
+            <div class="trend flex-row">
+              <img
+                class="profile-img"
+                src="img/photo-1526440847959-4e38e7f00b04.avif"
+                alt="Profile Picture"
+              />
+              <div>
+                <p class="name">@Minerva</p>
+                <p class="project">Cheese everything</p>
+              </div>
+            </div>
+            <div class="trend flex-row">
+              <img
+                class="profile-img"
+                src="img/daisy.jpg"
+                alt="Profile Picture"
+              />
+              <div>
+                <p class="name">@daisy</p>
+                <p class="project">Playtime calculator</p>
+              </div>
+            </div>
+            <div class="trend flex-row">
+              <img
+                class="profile-img"
+                src="img/pug.jpg"
+                alt="Profile Picture"
+              />
+              <div>
+                <p class="name">@Harry</p>
+                <p class="project">Harry Pawtter</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,371 @@
+/* VARIABLES */
+:root {
+  --color-light: #eef2ff;
+  --color-medium: #c7d2fe;
+  --color-dark: #818cf8;
+  --color-accent: #fdba74;
+
+  --color-white: #fff;
+  --color-grey: #737373;
+  --color-black: #0a0a0a;
+
+  --font-xsmall: 1.2rem;
+  --font-small: 1.6rem;
+  --font-medium: 2.5rem;
+  --font-big: 3rem;
+
+  --font-family: "Roboto", sans-serif;
+}
+
+/* RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Make rem calculations easier*/
+html {
+  font-size: 10px;
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+/* START OF STYLING */
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--color-light);
+  font-weight: 500;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "navbar options"
+    "navbar main";
+}
+
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar ul,
+.nav-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navbar .icon {
+  fill: var(--color-light);
+}
+
+.navbar-logo {
+  gap: 1rem;
+}
+
+.icon-container {
+  font-size: 2rem;
+}
+
+.logo-icon svg {
+  width: 5rem;
+  height: 5rem;
+  fill: var(--color-light);
+}
+
+.logo-text {
+  font-size: var(--font-big);
+  font-weight: 500;
+  color: var(--color-light);
+}
+
+.search-btn {
+  border: none;
+  background-color: transparent;
+}
+
+form {
+  gap: 1.5rem;
+}
+
+.search-bar {
+  margin-left: 2rem;
+  justify-self: star;
+  align-self: center;
+}
+
+.options svg {
+  fill: var(--color-dark);
+}
+
+.options input {
+  min-width: 60rem;
+  min-height: 2.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--color-medium);
+}
+
+.status-bar {
+  gap: 1.5rem;
+  justify-self: flex-end;
+  padding: 2rem;
+}
+
+.profile-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.welcome {
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  gap: 1.5rem;
+}
+
+.welcome p {
+  font-weight: 500;
+  font-size: var(--font-small);
+}
+
+.welcome h2 {
+  font-weight: 500;
+  font-size: var(--font-medium);
+}
+
+.welcome .profile-img {
+  width: 7rem;
+  height: 7rem;
+}
+
+.profile-name {
+  font-size: var(--font-small);
+  font-weight: 500;
+}
+
+.navbar {
+  background-color: var(--color-dark);
+  grid-area: navbar;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.options {
+  background-color: var(--color-light);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  grid-area: options;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(2, minmax(10%, max-content));
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.post-options {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+button {
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--color-dark);
+  padding: 0.5rem 2.5rem;
+  color: var(--color-light);
+  font-weight: 500;
+  font-size: var(--font-small);
+}
+
+.main {
+  padding: 2rem;
+  background-color: var(--color-medium);
+  grid-area: main;
+  display: grid;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  grid-template-columns: 3fr 1fr;
+  grid-auto-rows: max-content;
+  grid-template-areas:
+    "cards announcements"
+    "cards trending";
+}
+
+.cards-container {
+  grid-area: cards;
+}
+
+.cards {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+}
+
+.card {
+  background-color: var(--color-light);
+  border-left: 7px solid var(--color-accent);
+  padding: 2rem;
+  border-radius: 10px;
+  font-size: var(--font-small);
+  color: var(--color-grey);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  min-height: 185px;
+}
+
+.card h4 {
+  font-weight: 500;
+  color: var(--color-black);
+}
+
+.card-icons {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  fill: #818cf8;
+  cursor: pointer;
+}
+
+.anno-container {
+  grid-area: announcements;
+}
+
+.announcements {
+  background-color: var(--color-light);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.announcement h6 {
+  font-weight: 500;
+  font-size: var(--font-xsmall);
+  margin-bottom: 0.2rem;
+}
+.announcement p {
+  color: var(--color-grey);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: var(--font-xsmall);
+}
+
+.announcement > p:not([class="last"]) {
+  border-bottom: 1px solid var(--color-medium);
+}
+.trending-container {
+  grid-area: trending;
+}
+
+.trends {
+  background-color: var(--color-light);
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.trend {
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.trend .name {
+  font-size: var(--font-xsmall);
+  font-weight: 500;
+}
+
+.trend .project {
+  font-size: var(--font-xsmall);
+  color: var(--color-grey);
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-size: var(--font-medium);
+  font-weight: 500;
+}
+
+/* UTILITIES */
+.flex-row {
+  display: flex;
+  align-items: center;
+}
